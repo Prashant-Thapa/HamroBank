@@ -20,7 +20,7 @@ import java.util.List;
 public class ActivityLogServlet extends HttpServlet {
     
     private ActivityLogDAO activityLogDAO;
-    
+//    Initialize the Servlet
     @Override
     public void init() throws ServletException {
         activityLogDAO = new ActivityLogDAOImpl();
