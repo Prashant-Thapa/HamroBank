@@ -19,6 +19,8 @@ import java.io.IOException;
 public class ContactServlet extends HttpServlet {
     
     private ActivityLogDAO activityLogDAO;
+
+    // Initialize Servlet
     
     @Override
     public void init() throws ServletException {
