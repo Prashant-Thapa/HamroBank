@@ -1,0 +1,72 @@
+/* Admin Accounts Page Styles */
+
+.admin-section {
+    padding: 2rem 0;
+}
+
+.admin-content {
+    background-color: #fff;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    padding: 1.5rem;
+}
+
+.form-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.admin-form .form-group {
+    margin-bottom: 1.5rem;
+}
+
+.admin-form .form-actions {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.account-info {
+    background-color: var(--light-color);
+    border-radius: var(--border-radius);
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.info-item {
+    display: flex;
+    margin-bottom: 0.5rem;
+}
+
+.info-item .label {
+    font-weight: 600;
+    width: 150px;
+    color: var(--secondary-color);
+}
+
+.amount-input {
+    position: relative;
+}
+
+.currency-symbol {
+    position: absolute;
+    left: 0.75rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--secondary-color);
+}
+
+.amount-input input {
+    padding-left: 1.5rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .admin-form .form-actions {
+        flex-direction: column;
+    }
+    
+    .admin-form .form-actions .btn {
+        width: 100%;
+    }
+}

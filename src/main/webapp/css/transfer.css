@@ -1,0 +1,74 @@
+/* Transfer Page Styles */
+
+.transfer-section {
+    padding: 2rem 0;
+}
+
+.transfer-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.transfer-form {
+    flex: 1;
+    min-width: 300px;
+    background-color: #fff;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    padding: 2rem;
+}
+
+.transfer-info {
+    flex: 1;
+    min-width: 300px;
+    background-color: var(--light-color);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    padding: 2rem;
+}
+
+.transfer-info h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.transfer-info ul {
+    padding-left: 1.5rem;
+}
+
+.transfer-info li {
+    margin-bottom: 0.5rem;
+}
+
+.amount-input {
+    position: relative;
+}
+
+.currency-symbol {
+    position: absolute;
+    left: 0.75rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--secondary-color);
+}
+
+.amount-input input {
+    padding-left: 1.5rem;
+}
+
+.no-accounts {
+    width: 100%;
+    background-color: #fff;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    padding: 2rem;
+    text-align: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .transfer-content {
+        flex-direction: column;
+    }
+}

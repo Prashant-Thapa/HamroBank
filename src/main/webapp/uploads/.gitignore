@@ -1,0 +1,12 @@
+# Ignore all files in this directory
+*
+
+# Except for these files
+!.gitignore
+!README.md
+!*/
+
+# And these directories (but not their contents)
+!profile_pictures/
+profile_pictures/*
+!profile_pictures/README.md

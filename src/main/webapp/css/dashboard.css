@@ -1,0 +1,203 @@
+/* Customer Dashboard Styles */
+
+.dashboard-section {
+    padding: 2rem 0;
+}
+
+.dashboard-header {
+    margin-bottom: 2rem;
+}
+
+.dashboard-header h2 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.dashboard-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.dashboard-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    overflow: hidden;
+}
+
+.account-card .card-header {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.account-card .card-header h3 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.account-status {
+    font-size: 0.8rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 50px;
+    font-weight: 600;
+}
+
+.account-status.ACTIVE {
+    background-color: var(--success-color);
+}
+
+.account-status.INACTIVE {
+    background-color: var(--secondary-color);
+}
+
+.account-status.SUSPENDED {
+    background-color: var(--danger-color);
+}
+
+.account-card .card-body {
+    padding: 1.5rem;
+}
+
+.account-number, .account-balance {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.account-balance {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.label {
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+
+.account-balance .value {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.account-card .card-footer {
+    padding: 1rem;
+    background-color: var(--light-color);
+    display: flex;
+    justify-content: space-between;
+}
+
+.no-accounts {
+    background-color: #fff;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    padding: 2rem;
+    text-align: center;
+}
+
+.recent-transactions {
+    background-color: #fff;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    padding: 1.5rem;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.section-header h3 {
+    margin: 0;
+    color: var(--primary-color);
+}
+
+.view-all {
+    font-size: 0.9rem;
+}
+
+.transactions-table-container {
+    overflow-x: auto;
+}
+
+.transactions-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.transactions-table th,
+.transactions-table td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.transactions-table th {
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+
+.amount {
+    font-weight: 600;
+}
+
+.amount.incoming {
+    color: var(--success-color);
+}
+
+.amount.outgoing {
+    color: var(--danger-color);
+}
+
+.status {
+    font-weight: 600;
+}
+
+.status.COMPLETED {
+    color: var(--success-color);
+}
+
+.status.PENDING {
+    color: var(--warning-color);
+}
+
+.status.FAILED {
+    color: var(--danger-color);
+}
+
+.no-data {
+    text-align: center;
+    padding: 2rem;
+    color: var(--secondary-color);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .dashboard-cards {
+        grid-template-columns: 1fr;
+    }
+    
+    .account-card .card-footer {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .account-card .card-footer .btn {
+        width: 100%;
+        text-align: center;
+    }
+}

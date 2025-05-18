@@ -1,0 +1,10 @@
+This is a placeholder for the default profile picture.
+
+Please replace this file with an actual PNG image named "default-profile.png".
+
+The image should be a generic user avatar that will be displayed when a user hasn't uploaded their own profile picture.
+
+Recommended specifications:
+- Size: 200x200 pixels
+- Format: PNG with transparency
+- Content: A simple, professional user silhouette or avatar

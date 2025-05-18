@@ -1,0 +1,86 @@
+/* Transactions Page Styles */
+
+.transactions-section {
+    padding: 2rem 0;
+}
+
+.transactions-content {
+    background-color: #fff;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    padding: 1.5rem;
+}
+
+.account-selector {
+    margin-bottom: 2rem;
+}
+
+.account-selector .form-group {
+    max-width: 500px;
+}
+
+.transactions-table-container {
+    overflow-x: auto;
+}
+
+.transactions-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.transactions-table th,
+.transactions-table td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.transactions-table th {
+    font-weight: 600;
+    color: var(--secondary-color);
+    background-color: var(--light-color);
+}
+
+.transactions-table tbody tr:hover {
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
+.amount {
+    font-weight: 600;
+}
+
+.amount.incoming {
+    color: var(--success-color);
+}
+
+.amount.outgoing {
+    color: var(--danger-color);
+}
+
+.status {
+    font-weight: 600;
+}
+
+.status.COMPLETED {
+    color: var(--success-color);
+}
+
+.status.PENDING {
+    color: var(--warning-color);
+}
+
+.status.FAILED {
+    color: var(--danger-color);
+}
+
+.no-data {
+    text-align: center;
+    padding: 2rem;
+    color: var(--secondary-color);
+}
+
+.no-accounts {
+    text-align: center;
+    padding: 2rem;
+    color: var(--secondary-color);
+}
