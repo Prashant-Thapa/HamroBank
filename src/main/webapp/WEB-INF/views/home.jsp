@@ -61,72 +61,62 @@
     <div class="container">
         <h2 class="section-title">Our Services</h2>
         
-        <div class="services-preview-grid">
-            <div class="service-preview-card">
+        <div class="services-preview-grid" role="list">
+            <article class="service-preview-card" role="listitem" tabindex="0" aria-label="Personal Banking Service">
                 <h3>Personal Banking</h3>
                 <p>Manage your personal finances with our range of accounts, cards, and services designed to meet your everyday banking needs.</p>
-                <a href="${pageContext.request.contextPath}/services#personal" class="btn btn-outline">Learn More</a>
-            </div>
+                <a href="${pageContext.request.contextPath}/services#personal" class="btn btn-outline" aria-describedby="personal-desc">Learn More</a>
+            </article>
             
-            <div class="service-preview-card">
+            <article class="service-preview-card" role="listitem" tabindex="0" aria-label="Business Banking Service">
                 <h3>Business Banking</h3>
                 <p>From small businesses to large corporations, we offer tailored financial solutions to help your business grow and succeed.</p>
-                <a href="${pageContext.request.contextPath}/services#business" class="btn btn-outline">Learn More</a>
-            </div>
+                <a href="${pageContext.request.contextPath}/services#business" class="btn btn-outline" aria-describedby="business-desc">Learn More</a>
+            </article>
             
-            <div class="service-preview-card">
+            <article class="service-preview-card" role="listitem" tabindex="0" aria-label="Loans and Mortgages Service">
                 <h3>Loans & Mortgages</h3>
                 <p>Whether you're buying a home, a car, or need funds for personal reasons, we have loan options to suit your needs.</p>
-                <a href="${pageContext.request.contextPath}/services#loans" class="btn btn-outline">Learn More</a>
-            </div>
+                <a href="${pageContext.request.contextPath}/services#loans" class="btn btn-outline" aria-describedby="loans-desc">Learn More</a>
+            </article>
         </div>
     </div>
 </section>
 
-<section class="testimonials-section">
+<section class="testimonials-section" aria-label="Customer Testimonials">
     <div class="container">
         <h2 class="section-title">What Our Customers Say</h2>
         
-        <div class="testimonials-slider">
-            <div class="testimonial">
-                <div class="testimonial-content">
-                    <p>"Hamro Bank has been my trusted financial partner for over 5 years. Their customer service is exceptional, and their online banking platform is user-friendly and secure."</p>
-                </div>
-                <div class="testimonial-author">
-                    <div class="author-name">Rajesh Sharma</div>
-                    <div class="author-title">Business Owner</div>
-                </div>
-            </div>
+        <div class="testimonials-slider" role="list">
+            <blockquote class="testimonial" role="listitem" tabindex="0">
+                <p>"Hamro Bank has been my trusted financial partner for over 5 years. Their customer service is exceptional, and their online banking platform is user-friendly and secure."</p>
+                <footer class="testimonial-author">
+                    <cite class="author-name">Rajesh Sharma</cite> — <span class="author-title">Business Owner</span>
+                </footer>
+            </blockquote>
             
-            <div class="testimonial">
-                <div class="testimonial-content">
-                    <p>"I got my first home loan from Hamro Bank, and the process was smooth and transparent. The staff was helpful and guided me through every step."</p>
-                </div>
-                <div class="testimonial-author">
-                    <div class="author-name">Sita Thapa</div>
-                    <div class="author-title">Teacher</div>
-                </div>
-            </div>
+            <blockquote class="testimonial" role="listitem" tabindex="0">
+                <p>"I got my first home loan from Hamro Bank, and the process was smooth and transparent. The staff was helpful and guided me through every step."</p>
+                <footer class="testimonial-author">
+                    <cite class="author-name">Sita Thapa</cite> — <span class="author-title">Teacher</span>
+                </footer>
+            </blockquote>
             
-            <div class="testimonial">
-                <div class="testimonial-content">
-                    <p>"The mobile banking app is fantastic! I can manage all my accounts, pay bills, and transfer money with just a few taps. Highly recommended!"</p>
-                </div>
-                <div class="testimonial-author">
-                    <div class="author-name">Anil Gurung</div>
-                    <div class="author-title">Software Engineer</div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+            <blockquote class="testimonial" role="listitem" tabindex="0">
+                <p>"The mobile banking app is fantastic! I can manage all my accounts, pay bills, and transfer money with just a few taps. Highly recommended!"</p>
+                <footer class="testimonial-author">
+                    <cite class="author-name">Anil Gurung</cite> — <span class="author-title">Software Engineer</span>
+                </footer>
+            </blockquote>
 
-<section class="cta-section">
-    <div class="container">
-        <div class="cta-content">
-            <h2>Ready to Experience Better Banking?</h2>
-            <p>Join thousands of satisfied customers who trust Hamro Bank for their financial needs.</p>
-            <a href="${pageContext.request.contextPath}/register" class="btn btn-primary">Open an Account Today</a>
+            <blockquote class="testimonial" role="listitem" tabindex="0">
+                <p>"Hamro Bank’s investment advisory team helped me plan my finances better and start saving for my child's education. Their personalized support made a real difference."</p>
+                <footer class="testimonial-author">
+                    <cite class="author-name">Manisha K.C.</cite> — <span class="author-title">Civil Servant</span>
+                </footer>
+            </blockquote>
+
+
         </div>
     </div>
 </section>

@@ -46,7 +46,16 @@
     width: 100%;
     border-radius: var(--border-radius);
     box-shadow: var(--shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
 }
+
+/* Hover effect on image */
+.about-intro-image img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
 
 /* Mission Vision Section */
 .mission-vision-section {
@@ -60,11 +69,14 @@
     gap: 2rem;
 }
 
-.mission-card, .vision-card {
+.mission-card,
+.vision-card {
     background-color: #fff;
     border-radius: var(--border-radius);
     box-shadow: var(--shadow);
     padding: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
 }
 
 .mission-card {
@@ -75,10 +87,20 @@
     border-top: 4px solid var(--secondary-color);
 }
 
-.mission-card h2, .vision-card h2 {
+.mission-card h2,
+.vision-card h2 {
     margin-bottom: 1rem;
     color: var(--secondary-color);
 }
+
+/* Hover effects */
+.mission-card:hover,
+.vision-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    background-color: #f0f8ff;
+}
+
 
 /* Values Section */
 .values-section {
@@ -116,54 +138,71 @@
 }
 
 /* Team Section */
-.team-section {
-    padding: 4rem 0;
-    background-color: #f8f9fa;
-}
-
 .team-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
 }
 
 .team-member {
     background-color: #fff;
-    border-radius: var(--border-radius);
-    box-shadow: var(--shadow);
-    padding: 2rem;
+    border-radius: 12px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    min-height: 420px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
 }
 
-.member-image {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    overflow: hidden;
-    margin: 0 auto 1.5rem;
-    border: 4px solid var(--primary-color);
+/* Hover effect */
+.team-member:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    background-color: #f0f8ff; /* light blue background on hover */
 }
 
 .member-image img {
-    width: 100%;
-    height: 100%;
+    width: 120px;
+    height: 120px;
     object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
 }
 
-.team-member h3 {
-    margin-bottom: 0.5rem;
-    color: var(--secondary-color);
+.team-member:hover .member-image img {
+    transform: scale(1.05);
 }
 
 .member-title {
-    color: var(--primary-color);
-    font-weight: 600;
-    margin-bottom: 1rem;
+    color: #0056b3;
+    font-weight: bold;
+    margin-top: 5px;
+    transition: color 0.3s ease;
+}
+
+.team-member:hover .member-title {
+    color: #003366;
 }
 
 .member-bio {
-    font-size: 0.9rem;
+    font-size: 14px;
+    color: #333;
+    transition: color 0.3s ease;
 }
+
+.team-member:hover .member-bio {
+    color: #111;
+}
+
 
 /* Milestones Section */
 .milestones-section {
@@ -208,6 +247,8 @@
     box-shadow: var(--shadow);
     padding: 1.5rem;
     position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
 }
 
 .timeline-content::before {
@@ -228,12 +269,19 @@
     color: var(--secondary-color);
 }
 
+/* Hover effect */
+.timeline-content:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    background-color: #f0f8ff;
+}
+
 /* Responsive Styles */
 @media (max-width: 992px) {
     .about-intro-content {
         grid-template-columns: 1fr;
     }
-    
+
     .mission-vision-grid {
         grid-template-columns: 1fr;
     }
@@ -243,11 +291,11 @@
     .timeline::before {
         left: 60px;
     }
-    
+
     .timeline-item {
         padding-left: 90px;
     }
-    
+
     .timeline-year {
         width: 50px;
         font-size: 1rem;
