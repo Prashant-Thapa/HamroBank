@@ -12,7 +12,6 @@
         <h2>My Profile</h2>
         <p>View and update your personal information</p>
     </div>
-
     <div class="profile-content">
         <div class="profile-sidebar">
             <div class="profile-picture-container">

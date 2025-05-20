@@ -131,12 +131,23 @@
     <div class="container">
         <h2 class="section-title">Our Location</h2>
         <div class="map-container">
-            <!-- Replace with actual map embed code -->
-            <div class="map-placeholder">
-                <p>Map of Hamro Bank Head Office</p>
-                <p>123 Banking Street, Kathmandu, Nepal</p>
-            </div>
-        </div>
+            
+            <div class="map-section glass">
+                <h2>Our Location</h2>
+                <div class = "map-container">
+                     <iframe
+                        src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.081384030308!2d85.32405051438355!3d27.708955982790746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb190c4b7cfe4f%3A0x8d71a4a81685be3f!2sHamro%20Bank%20Ltd!5e0!3m2!1sen!2snp!4v1629474164564!5m2!1sen!2snp"
+                        width = "100%"
+                        height = "450"
+                        style = "border:0;"
+                        allowfullscreen=""
+                        loading = "lazy"
+                        referrerpolicy = "no-referrer-when-downgrade">
+
+
+                     </iframe>
+                </div>
+                
     </div>
 </section>
 

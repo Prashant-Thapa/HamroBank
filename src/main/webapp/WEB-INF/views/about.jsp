@@ -1,6 +1,8 @@
 e<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
+
+
 <jsp:include page="common/header.jsp">
     <jsp:param name="title" value="About Us - Hamro Bank" />
     <jsp:param name="page" value="about" />
@@ -22,7 +24,7 @@ e<%@ page contentType="text/html;charset=UTF-8" language="java" %>
                 <p>Over the years, we have continuously evolved to meet the changing needs of our customers while staying true to our core values of integrity, excellence, and community service.</p>
             </div>
             <div class="about-intro-image">
-                <img src="${pageContext.request.contextPath}/images/about-bank.jpg" alt="Hamro Bank Building">
+                <img src="${pageContext.request.contextPath}/images/Bank.jpg" alt="Hamro Bank Building">
             </div>
         </div>
     </div>
@@ -87,46 +89,58 @@ e<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <section class="team-section">
     <div class="container">
         <h2 class="section-title">Our Leadership Team</h2>
-        
         <div class="team-grid">
+            <!-- All 5 members together -->
             <div class="team-member">
                 <div class="member-image">
-                    <img src="${pageContext.request.contextPath}/images/ceo.jpg" alt="CEO">
+                    <img src="${pageContext.request.contextPath}/images/PrashantThapa.jpg" alt="Prashant">
                 </div>
                 <h3>Prashant Thapa</h3>
                 <p class="member-title">Chief Executive Officer</p>
-                <p class="member-bio">With over 25 years of experience in the banking industry, Binod leads our organization with vision and strategic insight.</p>
+                <p class="member-bio">With over 25 years of experience in the banking industry, Prashant leads our organization with vision and strategic insight.</p>
             </div>
-            
+
             <div class="team-member">
                 <div class="member-image">
-                    <img src="${pageContext.request.contextPath}/images/cfo.jpg" alt="CFO">
+                    <img src="${pageContext.request.contextPath}/images/SahajadiLohani.jpg" alt="Sahajadi">
                 </div>
-                <h3>Sahajadi</h3>
+                <h3>Sahajadi Lohani</h3>
                 <p class="member-title">Chief Financial Officer</p>
-                <p class="member-bio">Sunita brings her extensive financial expertise to ensure the bank's fiscal health and sustainable growth.</p>
+                <p class="member-bio">Sahajadi brings her extensive financial expertise to ensure the bank's fiscal health and sustainable growth.</p>
             </div>
-            
+
             <div class="team-member">
                 <div class="member-image">
-                    <img src="${pageContext.request.contextPath}/images/cto.jpg" alt="CTO">
+                    <img src="${pageContext.request.contextPath}/images/SandhyaPhuyal.jpg" alt="CTO">
                 </div>
                 <h3>Sandhya Phuyal</h3>
                 <p class="member-title">Chief Technology Officer</p>
-                <p class="member-bio">Amar leads our digital transformation initiatives, focusing on innovative solutions for enhanced customer experience.</p>
+                <p class="member-bio">Sandhya leads our digital transformation initiatives, focusing on innovative solutions for enhanced customer experience.</p>
             </div>
-            
+
             <div class="team-member">
                 <div class="member-image">
-                    <img src="${pageContext.request.contextPath}/images/coo.jpg" alt="COO">
+                    <img src="${pageContext.request.contextPath}/images/AnkitaPokhrel.jpg" alt="Ankita">
                 </div>
                 <h3>Ankita Pokharel</h3>
                 <p class="member-title">Chief Operations Officer</p>
-                <p class="member-bio">Priya oversees our day-to-day operations, ensuring efficiency and excellence in service delivery.</p>
+                <p class="member-bio">Ankita oversees our day-to-day operations, ensuring efficiency and excellence in service delivery.</p>
+            </div>
+
+            <div class="team-member">
+                <div class="member-image">
+                    <img src="${pageContext.request.contextPath}/images/IshaUpreti.jpg" alt="Isha">
+                </div>
+                <h3>Isha Upreti</h3>
+                <p class="member-title">Chief Risks Officer</p>
+                <p class="member-bio">Isha leads our risk management division, ensuring regulatory compliance and safeguarding the bank’s financial and operational integrity.</p>
             </div>
         </div>
     </div>
 </section>
+
+
+
 
 <section class="milestones-section">
     <div class="container">
